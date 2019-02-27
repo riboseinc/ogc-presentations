@@ -1,0 +1,18 @@
+= OGC presentation template
+
+This is a template presentation for the author to fill in the presentation in `index.adoc`.
+
+== Install Dependencies
+
+[source,shell]
+----
+bundle
+----
+
+== Quickstart
+
+[source,shell]
+----
+make clean all open
+----
+

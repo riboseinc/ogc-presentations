@@ -1,0 +1,49 @@
+= OGC presentation template
+:revealjsdir: reveal.js/
+:revealjs_customtheme: revealjs-css/ogc.css
+:revealjs_width: "100%"
+:revealjs_height: "100%"
+:revealjs_margin: 0
+:revealjs_minscale: 1
+:revealjs_maxscale: 1
+:icons: font
+:source-highlighter: highlightjs
+
+[.logo--banner]
+Open Geospatial Consortium
+
+[.logo--event]
+999th OGC Technical Committee Meetings
+
+Geneva
+
+February 29, 2019
+
+Your Name
+
+* *You*, Founder and CEO
+
+== My first slide!
+
+[cols="a,a",options="header"]
+|===
+|Important stuff
+|More important stuff
+
+|How awesome is this?
+
+|But this is more awesome!
+
+|===
+
+[.end]
+== And the last... that was quick.
+
+[.logo--event]
+Questions welcome!
+
+[.credit]
+OGC
+
+[.credit]
+https://www.opengeospatial.org
