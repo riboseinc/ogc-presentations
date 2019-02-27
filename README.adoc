@@ -1,0 +1,47 @@
+= OGC presentations
+
+== Preparation
+
+Fetch Reveal.js:
+
+[source,bash]
+----
+git submodule init --update
+----
+
+== Creating A New Presentation
+
+[source,bash]
+----
+make create NAME="${my_presentation_folder_name}"
+cd "${my_presentation_folder_name}"
+bundle update
+----
+
+== Compiling HTML & PDF outputs
+
+[source,bash]
+----
+cd "${my_presentation_folder_name}"
+make
+----
+
+== Behind the scene: housekeeping
+
+Update the Reveal.js ogc.css Stylesheet.
+
+Prepare npm for Reveal.js:
+
+[source,console]
+----
+${my_presentation_folder_name}> pushd reveal.js && npm install && popd
+----
+
+Regenerate the CSS:
+
+[source,console]
+----
+${my_presentation_folder_name}> cp revealjs-css/ogc.scss reveal.js/css/theme/source/
+> pushd reveal.js && `npm bin`/grunt css-themes && popd
+> cp reveal.js/css/theme/ogc.css revealjs-css/
+----
