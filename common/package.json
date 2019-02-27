@@ -13,8 +13,8 @@
   "dependencies": {
     "decktape": "^2.9.1",
     "grunt": "^1.0.3",
-    "live-server": "^1.2.0",
-    "onchange": "^3.3.0"
+    "live-server": "^1.2.1",
+    "onchange": "^5.2.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3"
