@@ -1,0 +1,16 @@
+= 110th OGC TC -- DocTeam -- Metanorma
+
+== Install Dependencies
+
+[source,shell]
+----
+bundle
+----
+
+== Quickstart
+
+[source,shell]
+----
+make clean all open
+----
+
