@@ -2,18 +2,36 @@
 
 == Preparation
 
-Fetch Reveal.js:
+[source,bash]
+----
+git clone https://github.com/riboseinc/ogc-presentations
+cd ogc-presentations
+git submodule update --init --recursive
+----
+
+== Testing an existing presentation
 
 [source,bash]
 ----
-git submodule init --update
+cd ogc19sg-20190227-docteam-mn
+make clean all
 ----
 
-== Creating A New Presentation
+You will get `index.html` and `index.pdf`.
+
+If you only want to iterate HTML, do this:
 
 [source,bash]
 ----
-make create NAME="${my_presentation_folder_name}"
+cd ogc19sg-20190227-docteam-mn
+make html; open index.html
+----
+
+== Creating a new presentation
+
+[source,bash]
+----
+cp template NAME="${my_presentation_folder_name}"
 cd "${my_presentation_folder_name}"
 bundle update
 ----
@@ -28,9 +46,9 @@ make
 
 == Behind the scene: housekeeping
 
-Update the Reveal.js ogc.css Stylesheet.
+Update the Reveal.js `ogc.css` stylesheet.
 
-Prepare npm for Reveal.js:
+Prepare `npm` for Reveal.js:
 
 [source,console]
 ----
