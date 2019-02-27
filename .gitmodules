@@ -1,0 +1,3 @@
+[submodule "ogc-presentation-framework"]
+	path = ogc-presentation-framework
+	url = git@github.com:riboseinc/ogc-presentation-framework.git
